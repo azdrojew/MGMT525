@@ -1,0 +1,82 @@
+\documentclass{article}
+ \usepackage{booktabs}
+ \usepackage{graphicx}
+ \usepackage{fancyhdr}
+  \usepackage[margin=1in]{geometry}
+ \setlength{\parindent}{0pt}
+\setcounter{page}{1} 
+\pagestyle{fancy}
+ \fancyhead{}
+ \fancyhf{}
+ \renewcommand{\headrulewidth}{0pt}
+ \fancyfoot{}
+ \fancyfoot[R]{\thepage}
+ \begin{document}
+\textbf{Table 1 : }\begin{center}
+\begin{table}[h]
+\centering
+\caption{Out-of-sample R-squared (\%) by model type }
+\begin{tabular}{lrrrr}
+\toprule
+{} &       OLS3H &       PLS &       ENet &        RF \\
+\midrule
+All          &  -15.836289 & -0.800220 &  -9.910757 &  0.544254 \\
+Top 1,000    & -306.306336 & -4.927021 & -32.484073 &  1.141781 \\
+Bottom 1,000 &    0.037578 &  0.583492 &  -3.336121 &  0.738013 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{center}
+\newpage\textbf{Table 2 : }\begin{center}
+\begin{table}[h]
+\centering
+\caption{Sharpe Ratios of RF Portfolios}
+\begin{tabular}{lrr}
+\toprule
+{} &   SR (VW) &   SR (EW) \\
+\midrule
+1   &  0.204842 &           \\
+2   &  0.143844 &  0.155259 \\
+3   &  0.165032 &  0.153687 \\
+4   &  0.183052 &  0.175989 \\
+5   &  0.203320 &  0.177744 \\
+6   &  0.208564 &  0.198344 \\
+7   &  0.199617 &  0.191566 \\
+8   &  0.210808 &  0.190100 \\
+9   &  0.185363 &  0.222235 \\
+10  &  0.153965 &  0.254399 \\
+\midrule Mkt &  0.204842 &           \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{center}
+\newpage\textbf{Table 3 : }\begin{center}
+\begin{table}[h]
+\centering
+\caption{Out-of-sample R-squared (\%) Predicting CRSP Portfolios}
+\begin{tabular}{lrr}
+\toprule
+{} &  Value-Weighted &  Equal-Weighted \\
+\midrule
+Benchmark=Forward Mean   &            2.14 &            3.63 \\
+Benchmark= 10\% annually &            2.18 &            3.79 \\
+Benchmark= 5\% annually  &            3.31 &            4.96 \\
+Benchmark=0              &            5.94 &            7.19 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{center}
+\newpage\textbf{Figure 1 : }
+\begin{center}
+ \begin{figure}[h!]
+ \includegraphics[scale=0.7]{fig3.pdf}\label{fig:fig3}
+ \end{figure}
+ \end{center}
+\clearpage 
+\textbf{Figure 2 : }
+\begin{center}
+ \begin{figure}[h!]
+ \includegraphics[scale=0.7]{fig9.pdf}\label{fig:fig9}
+ \end{figure}
+ \end{center}
+\clearpage 
